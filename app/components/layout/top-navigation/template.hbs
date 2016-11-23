@@ -1,10 +1,13 @@
 {{! with contextual components }}
 {{#paper-toolbar as |toolbar|}}
   {{#toolbar.tools}}
-    {{#paper-button}}
-      Go Back
+    {{#paper-button classNames="hide-gt-sm" iconButton=true onClick=(action leftSideBarOpen) }}
+      {{paper-icon "reorder"}}
     {{/paper-button}}
-    <h2>Toolbar with Standard Buttons</h2>
+    {{#paper-button}}
+      {{!-- {{#link-to 'index'}}
+      --}} <h2>Shopka</h2>
+    {{/paper-button}}
     <span class="flex"></span>
     {{#paper-button raised=true}}
       Learn More
