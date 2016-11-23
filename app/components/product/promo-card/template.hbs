@@ -1,1 +1,17 @@
+{{#paper-card as |card|}}
+  {{card.image src="http://placekitten.com/93/30" alt="Washed Out" title="Washed Out"}}
+  {{#card.title as |title|}}
+    {{#title.text as |text|}}
+      {{#text.headline}}{{product.name}}{{/text.headline}}
+    {{/title.text}}
+  {{/card.title}}
+  {{#card.content}}
+    <p>
+      The titles of Washed Out's breakthrough song and the first single from Paracosm share the two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
+    </p>
+  {{/card.content}}
+  {{#card.actions class="layout-column" }}
+    {{#paper-button}}Action 1{{/paper-button}}
+  {{/card.actions}}
+{{/paper-card}}
 {{yield}}

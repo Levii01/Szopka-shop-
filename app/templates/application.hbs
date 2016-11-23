@@ -1,5 +1,7 @@
 {{layout/top-navigation leftSideBarOpen=(action 'togglesideNav')}}
-
-{{layout/side-navigation leftSideBarOpen=leftSideBarOpen}}
-
-{{outlet}}
+{{#paper-sidenav-container class="inner-sidenav"}}
+  {{layout/side-navigation leftSideBarOpen=leftSideBarOpen}}
+  {{#paper-content padding=true classNames="layout-column"}}
+    {{outlet}}
+  {{/paper-content}}
+{{/paper-sidenav-container}}
