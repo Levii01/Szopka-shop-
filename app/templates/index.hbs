@@ -1,7 +1,7 @@
-<div class="flex layout-row layout-xs-column layout-wrap">
-{{#each model as |product|}}
-  <div class="flex-sm-20">
-  {{product/promo-card product=product}}
-  </div>
-{{/each}}
+<div class="layout-row layout-wrap flex">
+  {{#each model as |product|}}
+
+    {{product/promo-card product=product}}
+
+  {{/each}}
 </div>

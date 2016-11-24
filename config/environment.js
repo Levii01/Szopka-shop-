@@ -20,6 +20,13 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+    firebase: {
+      apiKey: "AIzaSyC-wLPlieG9VEVOSDpy27nFkG9QhS4OdYQ",
+      authDomain: "shopka-b3cee.firebaseapp.com",
+      databaseURL: "https://shopka-b3cee.firebaseio.com",
+      storageBucket: "shopka-b3cee.appspot.com",
+      messagingSenderId: "167806597241"
     }
   };
 
