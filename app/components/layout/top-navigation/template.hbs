@@ -12,13 +12,9 @@
     {{/link-to}}
     <h2></h2>
     <span class="flex"></span>
-    {{#paper-button raised=true}}
-      Learn More
-    {{/paper-button}}
 
-    {{#paper-button mini=true aria-label="Favorite" }}
-      {{paper-icon "favorite"}}
-    {{/paper-button}}
+
+    {{authentication.log-in-out}}
   {{/toolbar.tools}}
 {{/paper-toolbar}}
 {{yield}}
